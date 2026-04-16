@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <circle cx="25" cy="30" r="5" fill="#e8c97a" opacity="0.15"/>
+  <circle cx="25" cy="30" r="3" fill="#e8c97a" opacity="0.4"/>
+  <circle cx="25" cy="30" r="1.5" fill="#f5ead0"/>
+  <circle cx="65" cy="45" r="5" fill="#e8c97a" opacity="0.15"/>
+  <circle cx="65" cy="45" r="3" fill="#e8c97a" opacity="0.4"/>
+  <circle cx="65" cy="45" r="1.5" fill="#f5ead0"/>
+  <circle cx="45" cy="65" r="5" fill="#e8c97a" opacity="0.15"/>
+  <circle cx="45" cy="65" r="3" fill="#e8c97a" opacity="0.4"/>
+  <circle cx="45" cy="65" r="1.5" fill="#f5ead0"/>
+  <circle cx="80" cy="75" r="5" fill="#e8c97a" opacity="0.15"/>
+  <circle cx="80" cy="75" r="3" fill="#e8c97a" opacity="0.4"/>
+  <circle cx="80" cy="75" r="1.5" fill="#f5ead0"/>
+  <circle cx="18" cy="72" r="4" fill="#e8c97a" opacity="0.15"/>
+  <circle cx="18" cy="72" r="2.5" fill="#e8c97a" opacity="0.4"/>
+  <circle cx="18" cy="72" r="1.2" fill="#f5ead0"/>
+</svg>
