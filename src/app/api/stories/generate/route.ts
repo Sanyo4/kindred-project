@@ -27,8 +27,9 @@ export async function POST(request: Request) {
   let story;
   try {
     const result = await generateText({
-      model: groq('openai/gpt-oss-20b'),
+      model: groq('openai/gpt-oss-120b'),
       output: Output.object({ schema: storySchema }),
+      providerOptions: { groq: { strictJsonSchema: true } },
       system: STORY_SYSTEM_PROMPT,
       prompt: `Generate a bedtime story featuring a ${animal || 'small fox'} in a ${setting || 'cosy woodland'}. The child listening is called ${childName || 'little one'}.`,
     });
