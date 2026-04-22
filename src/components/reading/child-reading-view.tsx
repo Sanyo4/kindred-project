@@ -70,6 +70,7 @@ export function ChildReadingView({
 
   // Audio-driven page sync: auto-advance page when audio timeline progresses
   useEffect(() => {
+    if (!hasSeenRecording.current) return;   
     if (audio.currentTimelinePage && audio.currentTimelinePage !== currentPage) {
       setCurrentPage(audio.currentTimelinePage);
     }
