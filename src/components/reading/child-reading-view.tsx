@@ -58,19 +58,17 @@ export function ChildReadingView({
   });
 
   // When recording activates mid-session (fallback), seek audio to the current page
-  const hasSeenRecording = useRef(false);
+   const hasSeenRecording = useRef(false);
   useEffect(() => {
-    if (recording && !hasSeenRecording.current && !audio.isLoading && audio.duration > 0) {
+    if (recording && !hasSeenRecording.current && !audio.isLoading) {
       hasSeenRecording.current = true;
       if (currentPage > 1) {
         audio.seekToPage(currentPage);
       }
     }
-  }, [recording, audio.isLoading, audio.duration, currentPage, audio]);
-
-  // Audio-driven page sync: auto-advance page when audio timeline progresses
+  }, [recording, audio.isLoading, currentPage, audio]);
   useEffect(() => {
-    if (audio.currentTimelinePage && audio.currentTimelinePage !== currentPage) {
+    if (audio.currentTimelinePage && audio.currentTimelinePage > currentPage) {
       setCurrentPage(audio.currentTimelinePage);
     }
   }, [audio.currentTimelinePage, currentPage]);
